@@ -1,0 +1,28 @@
+version: '2'
+services:
+    web:
+      image: vsiraparapu/myappweb:latest
+      ports: 
+          - 8084:8084
+      environment:
+        - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/hendisantika
+        - SPRING_DATASOURCE_USERNAME=hendisantika
+        - SPRING_DATASOURCE_PASSWORD=root
+        - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      depends_on:
+          - db
+    db:
+        container_name: sample_db
+        image: postgres:9.5
+        volumes:
+            - sample_db:/var/lib/postgresql/data
+        environment:
+            - POSTGRES_PASSWORD=root
+            - POSTGRES_USER=hendisantika
+            - POSTGRES_DB=hendisantika
+            - PGDATA=/var/lib/postgresql/data/pgdata
+        ports:
+            - 5432:5432
+
+volumes:
+    sample_db: {}

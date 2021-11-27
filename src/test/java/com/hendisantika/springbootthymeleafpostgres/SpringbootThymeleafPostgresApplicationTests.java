@@ -1,13 +1,13 @@
-package com.hendisantika.springbootthymeleafpostgres;
+// package com.hendisantika.springbootthymeleafpostgres;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+// import org.junit.jupiter.api.Test;
+// import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class SpringbootThymeleafPostgresApplicationTests {
+// @SpringBootTest
+// class SpringbootThymeleafPostgresApplicationTests {
 
-    @Test
-    void contextLoads() {
-    }
+//     @Test
+//     void contextLoads() {
+//     }
 
-}
+// }
