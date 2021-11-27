@@ -3,7 +3,7 @@ services:
     web:
       image: vsiraparapu/myappweb:latest
       ports: 
-          - 8084:8084
+          - 8080:8080
       environment:
         - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/hendisantika
         - SPRING_DATASOURCE_USERNAME=hendisantika
